@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mon Hôtel</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue à Mon Hôtel</h1>
+        <nav>
+            <ul>
+                <li><a href="#chambres">Chambres</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="presentation">
+        <h2>Notre Hôtel</h2>
+        <p>Découvrez un endroit où le confort et le luxe se rencontrent.</p>
+    </section>
+
+    <section id="chambres">
+        <h2>Nos Chambres</h2>
+        <div class="chambre">
+            <h3>Chambre Standard</h3>
+            <p>À partir de 100€ par nuit.</p>
+        </div>
+        <div class="chambre">
+            <h3>Chambre Deluxe</h3>
+            <p>À partir de 150€ par nuit.</p>
+        </div>
+        <div class="chambre">
+            <h3>Suite Présidentielle</h3>
+            <p>À partir de 300€ par nuit.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Restaurant gastronomique</li>
+            <li>Service d'étage 24/7</li>
+            <li>Centre de fitness</li>
+            <li>Wi-Fi gratuit</li>
+            <li>Spa et bien-être</li>
+        </ul>
+    </section>
+
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="gallery-container">
+            <img src="images/hotel1.jpeg" alt="Image de l'hôtel" class="gallery-image">
+            <img src="images/hotel2.jpeg" alt="Image de la chambre" class="gallery-image" style="display: none;">
+            <img src="images/hotel3.jpeg" alt="Image de la piscine" class="gallery-image" style="display: none;">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contact-form" action="https://formspree.io/f/myzyznka" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <p>Pour toute demande, veuillez nous contacter à <a href="mailto:donne2339@gmail.com">contact@monhotel.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mon Hôtel. Tous droits réservés.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
