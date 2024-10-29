@@ -69,12 +69,27 @@
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
+            <label for="chambre">Type de Chambre :</label>
+            <select id="chambre" name="chambre" required>
+                <option value="standard">Chambre Standard</option>
+                <option value="deluxe">Chambre Deluxe</option>
+                <option value="suite">Suite Présidentielle</option>
+            </select>
 
-            <button type="submit">Envoyer</button>
+            <label for="services">Services Souhaités :</label>
+            <select id="services" name="services" required>
+                <option value="petit-dejeuner">Petit Déjeuner Inclus</option>
+                <option value="transfert-aeroport">Transfert Aéroport</option>
+                <option value="service-chambre">Service en Chambre</option>
+                <option value="autre">Autre (Précisez ci-dessous)</option>
+            </select>
+
+            <textarea id="details" name="details" placeholder="Détails supplémentaires (facultatif)"></textarea>
+
+            <button type="submit">Réserver</button>
         </form>
         <p>Pour toute demande, veuillez nous contacter à <a href="mailto:donne2339@gmail.com">contact@monhotel.com</a>.</p>
+        <p><strong>Note :</strong> Aucun paiement n'est requis lors de la réservation. Le paiement sera effectué à votre arrivée.</p>
     </section>
 
     <footer>
